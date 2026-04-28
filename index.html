@@ -4,205 +4,273 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Grupo Mexal</title>
+<title>Grupo Mexal</title>
 
-  <!-- STYLE DIREKT IN DER DATEI -->
+<style>
 
-  <style>
+/* BASIS */
 
-    /* RESET */
+body {
 
-    body {
+  margin: 0;
 
-      margin: 0;
+  font-family: Arial, sans-serif;
 
-      font-family: Arial, sans-serif;
+  color: #0b2c5a; /* LOGO BLAU */
 
-      background: #ffffff;
+}
 
-      color: #1a1a1a;
+/* HEADER */
 
-    }
+header {
 
-    /* HEADER */
+  position: fixed;
 
-    header {
+  top: 0;
 
-      position: sticky;
+  width: 100%;
 
-      top: 0;
+  background: white;
 
-      background: white;
+  display: flex;
 
-      padding: 15px 30px;
+  align-items: center;
 
-      display: flex;
+  justify-content: space-between;
 
-      justify-content: space-between;
+  padding: 20px 40px;
 
-      align-items: center;
+  transition: all 0.3s ease;
 
-      border-bottom: 1px solid #eee;
+  z-index: 1000;
 
-      z-index: 1000;
+  border-bottom: 1px solid #eee;
 
-    }
+}
 
-    nav a {
+/* LOGO */
 
-      margin: 0 10px;
+.logo img {
 
-      text-decoration: none;
+  height: 60px;
 
-      color: #333;
+  transition: all 0.3s ease;
 
-      font-weight: 500;
+}
 
-    }
+/* NAV */
 
-    .cta {
+nav a {
 
-      background: #0b2c5a;
+  margin: 0 15px;
 
-      color: white;
+  text-decoration: none;
 
-      padding: 10px 18px;
+  color: #0b2c5a;
 
-      border-radius: 5px;
+  font-weight: 600;
 
-    }
+}
 
-    /* HERO */
+/* BUTTON */
 
-    .hero {
+.cta {
 
-      padding: 80px 20px;
+  background: #0b2c5a;
 
-      text-align: center;
+  color: white;
 
-      background: #f7f9fc;
+  padding: 10px 18px;
 
-    }
+  border-radius: 5px;
 
-    .hero h1 {
+  text-decoration: none;
 
-      font-size: 32px;
+}
 
-      margin-bottom: 10px;
+/* SCROLL EFFEKT */
 
-    }
+header.scrolled {
 
-    /* CONTENT */
+  padding: 10px 40px;
 
-    .section {
+}
 
-      padding: 60px 20px;
+header.scrolled .logo img {
 
-      max-width: 1000px;
+  height: 40px;
 
-      margin: auto;
+}
 
-    }
+/* HERO */
 
-    /* CTA BLOCK */
+.hero {
 
-    .cta-block {
+  margin-top: 100px;
 
-      background: #0b2c5a;
+  padding: 100px 20px;
 
-      color: white;
+  text-align: center;
 
-      text-align: center;
+  background: #f7f9fc;
 
-      padding: 50px 20px;
+}
 
-    }
+.hero h1 {
 
-    /* FOOTER */
+  font-size: 34px;
 
-    footer {
+  margin-bottom: 10px;
 
-      padding: 30px;
+}
 
-      text-align: center;
+/* SECTION */
 
-      background: #111;
+.section {
 
-      color: white;
+  padding: 60px 20px;
 
-    }
+  max-width: 1000px;
 
-  </style>
+  margin: auto;
+
+}
+
+/* CTA BLOCK */
+
+.cta-block {
+
+  background: #0b2c5a;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 50px 20px;
+
+}
+
+/* FOOTER */
+
+footer {
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: #111;
+
+  color: white;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  nav {
+
+    display: none;
+
+  }
+
+  header {
+
+    padding: 15px 20px;
+
+  }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-  <!-- HEADER -->
+<!-- HEADER -->
 
-  <header>
+<header id="header">
 
-    <div><strong>GRUPO MEXAL</strong></div>
+  <div class="logo">
 
-    <nav>
+    <img src="https://i.postimg.cc/9MTb13wx/6746651C-146D-432A-BBD1-E14A15AA4F09.png">
 
-      <a href="index.html">Inicio</a>
+  </div>
 
-      <a href="servicios.html">Servicios</a>
+  <nav>
 
-      <a href="proceso.html">Proceso</a>
+    <a href="index.html">Inicio</a>
 
-      <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
 
-      <a href="contacto.html">Contacto</a>
+    <a href="proceso.html">Proceso</a>
 
-    </nav>
+    <a href="nosotros.html">Nosotros</a>
 
-    <a href="contacto.html" class="cta">Cotización</a>
+    <a href="contacto.html">Contacto</a>
 
-  </header>
+  </nav>
 
-  <!-- HERO -->
+  <a href="contacto.html" class="cta">Cotización</a>
 
-  <section class="hero">
+</header>
 
-    <h1>Importación y comercio internacional</h1>
+<!-- HERO -->
 
-    <p>Conectamos mercados entre México y Europa</p>
+<section class="hero">
 
-  </section>
+  <h1>Importación y comercio internacional</h1>
 
-  <!-- CONTENT -->
+  <p>Conectamos mercados entre México y Europa</p>
 
-  <section class="section">
+</section>
 
-    <h2>Servicios</h2>
+<!-- CONTENT -->
 
-    <p>Importación, logística, proveedores y soluciones B2B.</p>
+<section class="section">
 
-  </section>
+  <h2>Servicios</h2>
 
-  <!-- CTA -->
+  <p>Importación, logística, proveedores y soluciones B2B.</p>
 
-  <section class="cta-block">
+</section>
 
-    <h2>Solicita tu cotización</h2>
+<!-- CTA -->
 
-    <a href="contacto.html" class="cta">Contactar</a>
+<section class="cta-block">
 
-  </section>
+  <h2>Solicita tu cotización</h2>
 
-  <!-- FOOTER -->
+  <a href="contacto.html" class="cta">Contactar</a>
 
-  <footer>
+</section>
 
-    <p>© 2026 Grupo Mexal</p>
+<!-- FOOTER -->
 
-  </footer>
+<footer>
+
+  <p>© 2026 Grupo Mexal</p>
+
+</footer>
+
+<!-- SCRIPT SCROLL -->
+
+<script>
+
+window.addEventListener("scroll", function() {
+
+  var header = document.getElementById("header");
+
+  header.classList.toggle("scrolled", window.scrollY > 50);
+
+});
+
+</script>
 
 </body>
 
