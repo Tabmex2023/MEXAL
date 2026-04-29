@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Grupo Mexal</title>
@@ -13,265 +9,226 @@
 <style>
 
 /* BASIS */
-
 body {
-
   margin: 0;
-
   font-family: Arial, sans-serif;
-
-  color: #0b2c5a; /* LOGO BLAU */
-
+  color: #0b2c5a;
+  background: #ffffff;
 }
 
 /* HEADER */
-
 header {
-
   position: fixed;
-
   top: 0;
-
   width: 100%;
-
   background: white;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
-  padding: 20px 40px;
-
+  padding: 15px 20px;
   transition: all 0.3s ease;
-
   z-index: 1000;
-
   border-bottom: 1px solid #eee;
-
 }
 
 /* LOGO */
-
 .logo img {
-
-  height: 60px;
-
+  height: 80px;
   transition: all 0.3s ease;
-
 }
 
 /* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 nav a {
-
-  margin: 0 15px;
-
+  margin: 5px 10px;
   text-decoration: none;
-
   color: #0b2c5a;
-
   font-weight: 600;
-
+  font-size: 14px;
 }
 
 /* BUTTON */
-
 .cta {
-
   background: #0b2c5a;
-
   color: white;
-
-  padding: 10px 18px;
-
+  padding: 10px 16px;
   border-radius: 5px;
-
   text-decoration: none;
-
 }
 
-/* SCROLL EFFEKT */
-
+/* HEADER SCROLL */
 header.scrolled {
-
-  padding: 10px 40px;
-
+  padding: 10px 20px;
 }
 
 header.scrolled .logo img {
-
-  height: 40px;
-
+  height: 55px;
 }
 
 /* HERO */
-
 .hero {
-
-  margin-top: 100px;
-
+  margin-top: 110px;
   padding: 100px 20px;
-
   text-align: center;
-
   background: #f7f9fc;
-
 }
 
 .hero h1 {
-
   font-size: 34px;
-
   margin-bottom: 10px;
-
 }
 
-/* SECTION */
+.hero p {
+  font-size: 18px;
+  color: #333;
+}
 
+/* SECTIONS */
 .section {
-
   padding: 60px 20px;
-
   max-width: 1000px;
-
   margin: auto;
+}
 
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
 }
 
 /* CTA BLOCK */
-
 .cta-block {
-
   background: #0b2c5a;
-
   color: white;
-
   text-align: center;
+  padding: 60px 20px;
+}
 
-  padding: 50px 20px;
-
+.cta-block a {
+  margin-top: 10px;
+  display: inline-block;
 }
 
 /* FOOTER */
-
 footer {
-
   padding: 30px;
-
   text-align: center;
-
   background: #111;
-
   color: white;
-
 }
 
-/* MOBILE */
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .cta {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
-
   nav {
-
     display: none;
-
   }
-
-  header {
-
-    padding: 15px 20px;
-
-  }
-
 }
 
 </style>
-
 </head>
 
 <body>
 
 <!-- HEADER -->
-
 <header id="header">
-
   <div class="logo">
-
     <img src="https://i.postimg.cc/9MTb13wx/6746651C-146D-432A-BBD1-E14A15AA4F09.png">
-
   </div>
 
   <nav>
-
     <a href="index.html">Inicio</a>
-
     <a href="servicios.html">Servicios</a>
-
-    <a href="proceso.html">Proceso</a>
-
     <a href="nosotros.html">Nosotros</a>
-
     <a href="contacto.html">Contacto</a>
-
   </nav>
 
   <a href="contacto.html" class="cta">Cotización</a>
-
 </header>
 
 <!-- HERO -->
-
 <section class="hero">
-
   <h1>Importación y comercio internacional</h1>
-
   <p>Conectamos mercados entre México y Europa</p>
-
 </section>
 
-<!-- CONTENT -->
-
+<!-- SERVICIOS -->
 <section class="section">
+  <h2>Nuestros Servicios</h2>
 
-  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Importación</h3>
+      <p>Gestión completa de importación de productos hacia México.</p>
+    </div>
 
-  <p>Importación, logística, proveedores y soluciones B2B.</p>
+    <div class="card">
+      <h3>Proveedores</h3>
+      <p>Búsqueda y validación de proveedores confiables en Europa.</p>
+    </div>
 
+    <div class="card">
+      <h3>Logística</h3>
+      <p>Coordinación de transporte internacional y procesos aduanales.</p>
+    </div>
+
+    <div class="card">
+      <h3>Soluciones B2B</h3>
+      <p>Servicios personalizados para empresas y distribuidores.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO INTEGRIERT -->
+<section class="section">
+  <h2>Cómo trabajamos</h2>
+  <p>
+    Analizamos tu necesidad, buscamos los mejores proveedores,
+    gestionamos la importación y aseguramos la entrega eficiente del producto final.
+  </p>
 </section>
 
 <!-- CTA -->
-
 <section class="cta-block">
-
   <h2>Solicita tu cotización</h2>
-
+  <p>Contáctanos y recibe una propuesta personalizada para tu negocio.</p>
   <a href="contacto.html" class="cta">Contactar</a>
-
 </section>
 
 <!-- FOOTER -->
-
 <footer>
-
   <p>© 2026 Grupo Mexal</p>
-
 </footer>
 
-<!-- SCRIPT SCROLL -->
-
+<!-- SCRIPT -->
 <script>
-
 window.addEventListener("scroll", function() {
-
   var header = document.getElementById("header");
-
   header.classList.toggle("scrolled", window.scrollY > 50);
-
 });
-
 </script>
 
 </body>
-
 </html>
